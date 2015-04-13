@@ -1,0 +1,17 @@
+p#notice
+  = notice
+p
+  strong
+    | Title:
+  = @note.title
+p
+  strong
+    | Text:
+  = @note.text
+p
+  strong
+    | Date:
+  = @note.date
+= link_to 'Edit', edit_note_path(@note)
+|  | 
+= link_to 'Back', notes_path

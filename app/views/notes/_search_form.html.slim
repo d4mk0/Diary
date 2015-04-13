@@ -1,0 +1,4 @@
+= simple_form_for :search, method: :get, remote: true do |s|
+  = s.input :from_date, as: :date, default: @from_date
+  = s.input :to_date, as: :date, default: @to_date
+  = s.submit value: 'Search'
